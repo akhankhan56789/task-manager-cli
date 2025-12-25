@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class TaskManager {
 
+    // List to store tasks
     static ArrayList<String> tasks = new ArrayList<>();
 
     public static void main(String[] args) {
@@ -19,7 +20,7 @@ public class TaskManager {
 
     // Add a task
     public static void addTask(String task) {
-        if(task == null || task.isEmpty()) {
+        if (task == null || task.isEmpty()) {
             System.out.println("Task cannot be empty");
         } else {
             tasks.add(task);
@@ -41,7 +42,7 @@ public class TaskManager {
 
     // Delete a task by index
     public static void deleteTask(int index) {
-        if(index >= 0 && index < tasks.size()) {
+        if (index >= 0 && index < tasks.size()) {
             System.out.println("Task deleted: " + tasks.get(index));
             tasks.remove(index);
         } else {
