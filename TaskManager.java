@@ -14,7 +14,8 @@ public class TaskManager {
             System.out.println("Task cannot be empty");
         } else {
             tasks.add(task);
-            System.out.println("Task added: " + task);
+            System.out.println("Task added successfully: " + task);
+
         }
     }
 
